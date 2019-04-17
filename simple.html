@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7 ;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 {
+    background-color: #7ecea6; /* Green */ /* #b5e3cc */
+    color: #ffffff;
+  }
+  .bg-2 {
+    background-color: #474e5d;
+    color: #ffffff;
+  }
+  .bg-3 {
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 {
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  button{
+    color: #1abc9c;
+  }
+  </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#me">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#who">WHO</a></li>
+        <li><a href="#where">WHERE</a></li>
+        <li><a href="#you">YOU</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">I Am </h3>
+  <img src="fm.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <h3>Simple , Ambitious , Optimistic , Adventurous </h3>
+</div>
+
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center"id="who">
+  <h3 class="margin">Who Am I?</h3>
+  <p>I am Fatima, a third-year student at Qassim University, specialized in technical information
+My life is simple, like everyone else, I live with my family, which is the source of my strength and happiness.
+I love to spend my time in several things like learning, traveling, enjoyment...</p>
+</div>
+
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center" id="where">
+  <h3 class="margin">Where To Find Me?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Enjoy</h3>
+      <p>Sometimes I enjoy to sit alone and drink my coffee, thinking, reading, determining what I have to do ,and sometimes I enjoy to talk to many people and know what of are their interests and aspirations and information and reading books and tips, although I have a few friends but I enjoy it.</p>
+      <img src="fat.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4">
+      <h3>Travel</h3>
+      <p>I love exploring and adventures and I think I find myself in this area. Trips and explorations are fun for me. I love looking forward for  new places, new cultures, new people and new languages, I like to travel to visit museums, landmarks, seas, islands which is my favorite part.</p>
+      <img src="travel.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4">
+      <h3>Learn</h3>
+      <p>I love reading and learning about new things. I want to learn more languages and also more programming languages. I love to know the mysterious things like space. Its secrets and mystery inspires me. But I do not want to study it. I just love reading and following - up.</p><br>
+      <img src="learn.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+<!-- Fourth Container -->
+<div class="container-fluid bg-2 text-center"id="you">
+  <!-- Container (Contact Section) -->
+  <div class="container">
+    <h3 class="text-center">YOU</h3>
+    <p class="text-center"><em>Do you want tell me anythings? Ok enter your name , email and write comment..</em></p>
+<br>
+    <div class="row">
+      <div class="col-md-4">
+        <p>To communicate.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span>Qassim, KSA</p>
+        <p><span class="glyphicon glyphicon-phone"></span>Phone: +966 515151515</p>
+        <p><span class="glyphicon glyphicon-envelope"></span>Email: fatoosh917@gmail.com</p>
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <form method="post" action="me.php"> <!-- me. PHP page -->
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+        <br>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <button class="btn pull-right" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
+    <a href="https://www.pinterest.com/fatoosh917/" target="_blank">
+      <img src="pint.png" alt="Pinterest icon" width="25"
+        height="25"> Pinterest </a>
+        &nbsp; &nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
+     <a href="https://twitter.com/Fatoommohaimeed" target="_blank">
+      <img src="twi.png" alt="Twitter icon" width="20"
+        height="20"> Twitter </a>
+        &nbsp; &nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
+      <a href="https://github.com/fatimahmohaimeed" target="_blank">
+      <img src="git.ico" alt="Github icon" width="25"
+         height="25"> Github </a>
+    </div>
+  </div>
+      </div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Designed  By  <a href="https://github.com/fatimahmohaimeed " target="_blank">  Fatimah Almohaimeed </p>
+</footer>
+
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
